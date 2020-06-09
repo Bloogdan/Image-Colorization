@@ -1,4 +1,4 @@
 runtime: python37
 threadsafe: false
 resources:
-    memory: 2
+    memory_gb: 2
