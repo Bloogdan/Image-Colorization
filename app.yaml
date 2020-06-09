@@ -1,4 +1,4 @@
 runtime: python37
 resources:
     disk_size_gb: 10
-instance_class: F2
+instance_class: F4
