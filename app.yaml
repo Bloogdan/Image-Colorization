@@ -1,4 +1,3 @@
 runtime: python37
-threadsafe: false
 resources:
     memory_gb: 2
