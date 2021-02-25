@@ -1,0 +1,25 @@
+.upload {
+    align-content: center;
+}
+
+.upload-button {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 126px;
+    margin: 20px auto;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 12px;
+    color: gray;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload-button:focus {
+    outline: none;
+}
+

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="upload">
+    <form action="/upload" class="dropzone" id="uploadzone" method="POST" enctype="multipart/form-data"
+        style="margin-top: 10px;"></form>
+
+    
+        <button class="upload-button" type="button" id="btnUpload">
+        <span class="font">submit</span>
+        </button>
+    
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/dropzone.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/dropzone_options.js') }}"></script>
+</div>
+{% endblock %}

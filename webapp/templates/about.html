@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="about font" style="font-size: 16px;">
+     <p>The application offers an automatized method of colorizing black and white images. It performs best on small resolution photos of landscapes and sceneries.</p>
+	 
+	 <h3>How does it work?</h3>
+	 <p>
+		To colorize a black and white image, the application uses a Convolutional Neural Network to predict the colorized version of the photo. It uses the Autoencoder architecture which consists of:
+		<ul>
+			<li>An encoder – which extracts low level features of the black and white image</li>
+			<li>A decoder – which tries to reconstruct the colorized image</li>
+		</ul>
+	</p>
+	<p> To speed up the learning process the images are converted into the Lab color space, where the L channel is the input of the network and the ab channels are the output. The input and output are concatenated then converted back into RGB to obtain the result. </p>
+	
+	<h3>Deploying the model as a web application</h3>
+	<p>After training the model, it was only I who could make use of it. In order for the colorizer to be useful  to the public I had to deploy it to the internet.</p>
+	<p>I used the Google AI Platform on Google Cloud to deploy my model as an API. I then built a simple web app that can take pictures from users, colorize them using the service and then show the results on its front page gallery.</p>
+   </div>
+ {% endblock %}

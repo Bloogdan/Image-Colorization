@@ -1,0 +1,8 @@
+Flask
+scikit-learn
+scikit-image
+google-api-python-client
+google-cloud-datastore
+google-cloud-storage
+grpcio
+pillow

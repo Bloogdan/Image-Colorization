@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Colorization</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dropzone.css') }}">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <ul class="navbar">
+        <li style="float: left; margin-left: 25px">
+          <a class="logo" href="{{ url_for('home') }}">
+            <span class="font" style="font-weight: bold;">image</span>
+            <span class="font">colorization</span>
+          </a>
+        </li>
+        <li style="margin-right: 25px">
+          <a class="font home" href="{{ url_for('home') }}">home</a>
+        </li>
+        <li>
+          <a class="font about" href="{{ url_for('about') }}">about</a>
+        </li>
+        <li>
+          <a class="font upload" href="{{ url_for('upload') }}">upload</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="body-container">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>

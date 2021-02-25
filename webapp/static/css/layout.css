@@ -1,0 +1,40 @@
+.font {
+    font-family: "Noto Sans";
+    color: gray;
+    font-size: 24px;
+}
+
+a.logo:hover *, a.logo:active * {color: #ed645a;} 
+a.home:hover, a.home:active {color: #6190c2;} 
+a.about:hover, a.about:active {color: #479e5a;} 
+a.upload:hover, a.upload:active {color: #aba64f;} 
+
+.nav-container {
+    padding-top: 150px;
+}
+
+.navbar {
+    width: 652px;
+    list-style-type: none;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li > * {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.body-container {
+    margin:auto;
+    width: 652px;
+}

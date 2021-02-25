@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="image-gallery" id="scroller">
+	<template id="image_template">
+		<div class="image-container">
+			<img id="image" src="" width="150" height="150">
+		</div>
+	</template>
+</div>
+
+<div class="" id="sentinel">
+	<div class="" role="status"></div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/load_images.js') }}"></script>
+{% endblock %}
